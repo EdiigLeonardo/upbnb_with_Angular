@@ -1,0 +1,13 @@
+.casa{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 0.9em;
+  gap: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .casa{
+    display: flex;
+    flex-direction: column;
+  }
+}

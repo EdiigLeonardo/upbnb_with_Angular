@@ -1,0 +1,8 @@
+<section class="icons__section_details__">
+  <img *ngFor="let src_active of features_actives"
+       src="../../../../assets/{{src_active}}.svg" class="icons__img_section_details__"
+       [ngClass]="'active'">
+  <img *ngFor="let src_inactive of features_inactives"
+       src="../../../../assets/{{src_inactive}}.svg" class="icons__img_section_details__"
+       [ngClass]="'inactive'">
+</section>

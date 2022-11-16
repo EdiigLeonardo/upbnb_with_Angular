@@ -1,0 +1,15 @@
+<div class="casas" *ngIf="favorites">
+  <h1>Favoritos</h1>
+  <div *ngFor="let country of keys__" class="inside_casas__">
+    <h3>{{country}}</h3>
+    <app-favorite *ngFor="let favorite of grouped[country]"
+                  [featured_photo]="favorite.featured_photo"
+                  [city]="favorite.city"
+                  [host_type]="favorite.host_type"
+                  [price]="favorite.price"
+                  [rating]="favorite.rating"
+    ></app-favorite>
+
+  </div>
+</div>
+

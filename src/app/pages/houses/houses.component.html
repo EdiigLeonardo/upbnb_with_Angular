@@ -1,0 +1,11 @@
+<div class="casa">
+  <app-house *ngFor="let item of casas.data"
+  [title]="item.title"
+  [country]="item.country"
+  [city]="item.city"
+  [rating]="item.rating"
+  [price_by_night]="item.price"
+  [host_type]="item.host_type"
+  [featured_photo]="item.featured_photo"
+  [id_casa]="item.id"></app-house>
+</div>

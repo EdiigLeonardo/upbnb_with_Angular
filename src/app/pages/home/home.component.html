@@ -1,0 +1,32 @@
+<div class="home__container">
+  <div class="bem-vindo__">
+    <h1>Bem-Vindo</h1>
+    <p class="_inside_p">Ao seu Perfil</p>
+    <p class="_inside_p ">As Minhas Reservas</p>
+    <div class="booking__container">
+      <app-house *ngFor="let item of booking.data"
+                [title]="item.title"
+                [country]="item.country"
+                [city]="item.city"
+                [rating]="item.rating"
+                [price]="item.price"
+                [host_type]="item.time"
+                [featured_photo]="item.featured_photo"
+                [id_casa]="item.id"
+      ></app-house>
+    </div>
+    <p class="_inside_p">Reservas Passadas</p>
+    <div class="booking__container">
+      <app-house *ngFor="let item of booking_past.data"
+                [title]="item.title"
+                [country]="item.country"
+                [city]="item.city"
+                [rating]="item.rating"
+                [price]="item.price"
+                [host_type]="item.time"
+                [featured_photo]="item.featured_photo"
+                 [id_casa]="item.id"
+      ></app-house>
+    </div>
+  </div>
+</div>

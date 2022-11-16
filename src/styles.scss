@@ -1,1 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box
+}
+
+p{
+  min-width: 100%;
+/*  width: 100%;
+  max-width: 100%;*/
+  text-align: justify;
+}
+
+.inactive{
+  background-color: #ababab;
+}
+
+.active{
+  background-color: #037f9d;
+  color: whitesmoke;
+}
+
+.img{
+  border-radius: 10px;
+  //box-shadow: 2px 2px #005063;
+}
+
+

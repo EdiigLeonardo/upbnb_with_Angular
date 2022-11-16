@@ -1,0 +1,21 @@
+<div class="casa_container_house">
+  <div class="img__container_home">
+    <img [src]="featured_photo" [routerLink]="['/details', id_casa]" class="main_photo"/>
+    <img [src]="favorite ? heart_full : heart_empty" class="ng_icon_casa" (click)="toggleFavorite()"/>
+  </div>
+  <div class="desc_container">
+    <div class="text_casa">
+      <h3 *ngIf="rating || country">{{city}}, {{country}}</h3>
+      <h5><fa-icon [icon]="faStar" *ngIf="rating"></fa-icon>{{rating}}</h5>
+    </div>
+    <div class="text_casa_amount" *ngIf="host_type || price_by_night || price">
+      <span class="anfitriao" *ngIf="host_type">{{host_type}}</span>
+      <div class="price">
+        <span class="price_bolder" *ngIf="price_by_night">{{price_by_night}}€</span>
+        <span class="price_bolder" *ngIf="price">{{price}}€</span>
+        <span *ngIf="price_by_night">/Noite</span>
+      </div>
+    </div>
+  </div>
+</div>
+

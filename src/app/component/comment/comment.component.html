@@ -1,0 +1,15 @@
+<div class="comments">
+  <div class="profile-info">
+    <img alt="profile_foto" [src]="image"/>
+    <div class="user_info">
+      <p>{{user_name}}</p>
+      <span class="data" *ngIf="date">{{date}}</span>
+      <span class="type" *ngIf="type">
+        <fa-icon [icon]="faStar" class="icon_comment"></fa-icon>{{type}}
+      </span>
+    </div>
+  </div>
+  <p class="description_text">
+    {{description}}
+  </p>
+</div>

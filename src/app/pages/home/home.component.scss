@@ -1,0 +1,18 @@
+.bem-vindo__{
+  h1 {
+    font-size: 3.5em;
+  }
+  ._inside_p{
+    font-size: 2.5em;
+  }
+
+  .booking__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+
+    >div{
+      flex: 1;
+    }
+  }
+}

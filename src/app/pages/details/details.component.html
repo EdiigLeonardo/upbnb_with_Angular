@@ -1,0 +1,51 @@
+<div class="details__">
+  <header>
+    <h1>{{house.title | titlecase}}</h1>
+    <div class="inline_text">
+      <h3 class="inline_text_details__"><fa-icon [icon]="faStar"></fa-icon>{{house.rating}}</h3>
+      <span class="inline_text_details__">{{house.city}}, {{house.country}}</span>
+    </div>
+
+  </header>
+  <main class="main_img__details">
+    <div class="img_details_container__">
+      <img [src]="house.featured_photo" class="img_details"/>
+      <img [src]="favorite ? heart_full : heart_empty" class="icon_details" (click)="toggleFavorite()"/>
+    </div>
+    <div class="price_deatails_container">
+      <h3>{{house.price}}€</h3>
+      <p>/Noite</p>
+    </div>
+  </main>
+  <article class="article_details">
+    <p class="article_p_details">
+      {{house.description}}
+    </p>
+  </article>
+  <section class="icons__section_">
+    <app-icons></app-icons>
+  </section>
+  <section class="anfitriao_-_section__details">
+    <h5>Sobre o Anfitrião</h5>
+    <div class="anfitriao_div_section">
+      <app-comment
+        [user_name]="host.name"
+        [image]="host.photo"
+        [type]="host.type"
+        [description]="host_desc">
+      </app-comment>
+    </div>
+  </section>
+  <section class="galeria__section__">
+    <h5>Galeria</h5>
+    <div class="galeria_div_section">
+      <app-galleries></app-galleries>
+    </div>
+  </section>
+  <section class="anfitriao_-_section__details">
+    <h5>Comentarios</h5>
+    <div class="comments_div_section">
+      <app-comments></app-comments>
+    </div>
+  </section>
+</div>

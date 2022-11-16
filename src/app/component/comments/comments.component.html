@@ -1,0 +1,10 @@
+<div class="comments__c">
+  <app-comment
+    *ngFor="let item of comments.reviews"
+    [user_name]="item.name"
+    [image]="item.photo"
+    [date]="item.date"
+    [description]="item.comment"
+    [id] = "item.id">
+  </app-comment>
+</div>

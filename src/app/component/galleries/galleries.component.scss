@@ -1,0 +1,15 @@
+.galleries_container{
+    display: grid;
+    grid-template-columns: repeat(2, calc(800px / 2 - 30%));
+    gap: 10px;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 50%;
+
+    .img_galleries__{
+      width: 236px;
+      height: 236px;
+      padding: 5px;
+      border-radius: 20px;
+    }
+}

@@ -1,0 +1,24 @@
+
+<div class="favorite_container">
+  <div class="img__container_">
+    <div class="img_casa__">
+      <img [src]="featured_photo"/>
+    </div>
+    <div (click)="toggleFavorite()" class="_absolute_icon">
+      <fa-icon [icon]="favorite ? faHeartSolid : faHeart"></fa-icon>
+    </div>
+  </div>
+  <div class="desc_container__">
+    <div class="text_casa">
+      <h3>{{city}}</h3>
+    </div>
+    <div class="text_casa_amount">
+      <span class="anfitriao">{{host_type}}</span>
+      <div class="price">
+        <span class="price_bolder">{{price}}€</span>
+        <span>/Noite</span>
+        <h5><fa-icon [icon]="faStar"></fa-icon>{{rating}}</h5>
+      </div>
+    </div>
+  </div>
+</div>
