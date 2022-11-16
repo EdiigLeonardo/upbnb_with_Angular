@@ -30,10 +30,10 @@ export class FavoriteComponent implements OnInit {
   }
 
   toggleFavorite(){
-    this.upbnb.toogleFavorite(this.casas.id)
+    this.upbnb.toogleFavorite(this.id_casa)
   }
 
   get favorite(){
-    return this.upbnb.isFavorite(this.casas.id)
+    return this.upbnb.isFavorite(this.id_casa)
   }
 }
