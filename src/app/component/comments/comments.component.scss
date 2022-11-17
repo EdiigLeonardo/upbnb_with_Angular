@@ -1,3 +1,11 @@
 .comments__c{
+  width: 100%;
+  max-width: 600px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 460px) {
+  .comments__c{
+    max-width:  500px;
+  }
 }
