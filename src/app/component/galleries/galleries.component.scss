@@ -1,6 +1,6 @@
 .galleries_container{
-    display: grid;
-    grid-template-columns: repeat(2, calc(800px / 2 - 30%));
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
     max-width: 100%;

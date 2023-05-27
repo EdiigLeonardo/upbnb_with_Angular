@@ -7,10 +7,10 @@
   }
 
   .booking__container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 5px;
-
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    //gap: 5px;
     >div{
       flex: 1;
     }

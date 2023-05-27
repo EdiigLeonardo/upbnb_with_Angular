@@ -1,7 +1,7 @@
 .icons__section_details__{
-  display: grid;
-  grid-template-columns: repeat(5, 60px);
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
   margin: 15px 0;
 
   .icons__img_section_details__{
